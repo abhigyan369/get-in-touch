@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="logo.png">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const text = "Hey, I am Abhigyan Kumar, a second-year undergrad who loves math and machine learning. I’m diving into web development right now and always working on improving my DSA skills.";
+  
+  const aboutElement = document.querySelector(".about");
+  let index = 0;
+
+  function typeEffect() {
+    if (index < text.length) {
+      aboutElement.innerHTML += text[index]; // Add character by character
+      index++;
+      setTimeout(typeEffect, 50); // Adjust speed (50ms per character for smooth effect)
+    }
+  }
+
+  typeEffect(); // Start typing animation
+});
+
+  </script>
+  
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhigyan</title>
+</head>
+<body>
+  <p class="name">
+    <strong>Abhigyan
+  </strong>
+  </p>
+  <img class="pfp" src="img.jpg" alt="">
+  <div class="container">
+    <a href="https://x.com/abhigyan369" target="_blank">
+    <button>
+      Twitter
+    </button>
+    </a>
+    <a href="https://github.com/abhigyan369" target="_blank">
+    <button>
+      Github
+    </button>
+    </a>
+    <a href="">
+    <button>
+      Blog
+    </button>
+    </a>
+    <a href="mailto:abhigyan77@gmail.com" target="_blank">
+    <button>
+      Get in Touch
+    </button>
+    </a>
+  </div>
+  <div class="about-container">
+    <p class="about"></p> <!-- Start empty, JS will fill this dynamically -->
+  </div>
+  
+</body>
+</html>
